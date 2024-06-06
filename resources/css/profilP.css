@@ -1,0 +1,120 @@
+/* Reset some basic elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+  }
+  
+  /* Main container */
+  .App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+  }
+  
+  /* Header section */
+  .header {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #d3d3d3;
+  }
+  
+  .profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  
+  header h1 {
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  /* Main content sections */
+  .visit-section, .consultation-summary {
+    margin: 15px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .visit-button, .summary-button {
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  .visit-count, .summary-details p {
+    font-size: 1em;
+    color: #555;
+  }
+  
+  /* Footer navigation */
+  .bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 10px 0;
+    position: sticky;
+    bottom: 0;
+  }
+  
+  .bottom-nav button {
+    background: none;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  .bottom-nav button:hover {
+    background-color: #555;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .profile-pic {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    header h1 {
+      font-size: 1.5em;
+    }
+  
+    .visit-button, .summary-button {
+      font-size: 1.2em;
+      padding: 15px 10px;
+    }
+  
+    .visit-count, .summary-details p {
+      font-size: 1.1em;
+    }
+  
+    .bottom-nav button {
+      font-size: 1.1em;
+      padding: 15px;
+    }
+  }
+  
